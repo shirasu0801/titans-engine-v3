@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\PRO B850-P WIFI\game\titans\build\CMakeFiles\ad8789d37571506a017838e22d9373c2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4973F82E-E423-3D97-A464-2A4A5899F42C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

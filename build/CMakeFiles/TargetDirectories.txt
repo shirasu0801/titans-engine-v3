@@ -1,0 +1,3 @@
+C:/Users/PRO B850-P WIFI/game/titans/build/CMakeFiles/ChessTitans.dir
+C:/Users/PRO B850-P WIFI/game/titans/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/PRO B850-P WIFI/game/titans/build/CMakeFiles/ZERO_CHECK.dir

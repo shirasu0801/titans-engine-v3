@@ -1,0 +1,1 @@
+C:\emsdk\upstream\emscripten\em++.bat -O3 -DNDEBUG --bind -s WASM=1 -s MODULARIZE=1 -s EXPORT_ES6=1 -s ALLOW_MEMORY_GROWTH=1 -s EXPORTED_RUNTIME_METHODS=[ccall,cwrap] -s ENVIRONMENT=web -O3 @CMakeFiles\chess.dir\objects1.rsp -o "C:\Users\PRO B850-P WIFI\game\titans-engine-v3\wasm-build\chess.js"

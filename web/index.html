@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Titans - WASM Edition</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/pieces.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Chess Titans</h1>
+            <div id="turn-indicator">
+                <div class="turn-piece white-piece"></div>
+                <span id="turn-text">White to move</span>
+                <div class="turn-piece black-piece"></div>
+            </div>
+        </header>
+
+        <main id="game-container">
+            <div id="board-wrapper">
+                <div id="board"></div>
+            </div>
+
+            <aside id="game-info">
+                <div id="status-panel">
+                    <h2>Game Status</h2>
+                    <p id="game-status">Game in progress</p>
+                </div>
+
+                <div id="controls">
+                    <button id="new-game-btn" class="btn btn-primary">New Game</button>
+                    <button id="undo-btn" class="btn" disabled>Undo Move</button>
+                </div>
+
+                <div id="options">
+                    <h3>Options</h3>
+                    <label>
+                        <span>AI Difficulty:</span>
+                        <select id="ai-depth">
+                            <option value="2">Easy (Depth 2)</option>
+                            <option value="3">Medium (Depth 3)</option>
+                            <option value="4" selected>Hard (Depth 4)</option>
+                            <option value="5">Expert (Depth 5)</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="captured-pieces">
+                    <h3>Captured</h3>
+                    <div id="captured-white" class="captured-row"></div>
+                    <div id="captured-black" class="captured-row"></div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Promotion Dialog -->
+        <div id="promotion-dialog" class="modal hidden">
+            <div class="modal-content">
+                <h2>Choose Promotion</h2>
+                <div id="promotion-pieces">
+                    <button class="promotion-btn" data-piece="1">
+                        <svg class="promotion-piece" viewBox="0 0 45 45"><use href="assets/pieces.svg#queen-white"></use></svg>
+                        <span>Queen</span>
+                    </button>
+                    <button class="promotion-btn" data-piece="2">
+                        <svg class="promotion-piece" viewBox="0 0 45 45"><use href="assets/pieces.svg#rook-white"></use></svg>
+                        <span>Rook</span>
+                    </button>
+                    <button class="promotion-btn" data-piece="3">
+                        <svg class="promotion-piece" viewBox="0 0 45 45"><use href="assets/pieces.svg#bishop-white"></use></svg>
+                        <span>Bishop</span>
+                    </button>
+                    <button class="promotion-btn" data-piece="4">
+                        <svg class="promotion-piece" viewBox="0 0 45 45"><use href="assets/pieces.svg#knight-white"></use></svg>
+                        <span>Knight</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay">
+            <div class="loader"></div>
+            <p>Loading Chess Engine...</p>
+        </div>
+
+        <!-- AI Thinking Indicator -->
+        <div id="ai-thinking" class="hidden">
+            <div class="thinking-spinner"></div>
+            <span>AI is thinking...</span>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

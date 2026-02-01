@@ -1,0 +1,29 @@
+# Visual Studio Artifact
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# binary
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.aps
+
+# Emscripten / WebAssembly
+*.wasm
+*.js
+*.wasm.map
+
+# その他
+Thumbs.db
+nul
